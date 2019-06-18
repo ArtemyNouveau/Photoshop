@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PHOTOZHAB</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="head"></div>
+
+	<div class="container flex-wrap">
+		<h1>
+			Фотожаба 1.0
+		</h1>
+		<div class="param">
+			<div class="range-wrap">
+				<label for="sizeSelect"></label>
+				<input type="range" min="0" max="50" step="1" value="10" id="sizeSelect">
+			</div>
+			<div class="range-wrap">
+				<label for="color"></label>
+				<input type="color" list="colorList" name="idColor" id="color" value="#007bff">
+			</div>
+			<datalist id="colorList">
+				<option value="#007bff" label="Синий">
+				<option value="#000000" label="Черный">
+				<option value="#ff0000" label="Красный">
+				<option value="#00ff00" label="Зелёный">
+				<option value="#ffffff" label="Белый">
+			</datalist>
+		</div>
+		<div class="canv">
+			<canvas id="canv" width="600" height="600"></canvas>
+		</div>
+
+		<div class="tools">
+			<button class="toolButton btn btn-primary" id='pencil'>
+				<i class="fas fa-pen"></i>
+			</button>
+			<button class="toolButton btn btn-primary" id='dots'>
+				<i class="fas fa-circle"></i>
+			</button>
+			<button class="toolButton btn btn-primary" id='spray'>
+				<i class="fas fa-spray-can"></i>
+			</button>
+			<button class="toolButton btn btn-primary" id='sets'>
+				<i class="fab fa-connectdevelop"></i>
+			</button>
+			<button class="toolButton btn btn-primary" id='perspective'>
+				<i class="fab fa-centos"></i>
+			</button>
+			<button class="toolButton btn btn-primary" id='eraser'>
+				<i class="fas fa-eraser"></i>
+			</button>
+		</div>
+	</div>
+
+
+	<script src="script.js">
+		
+
+	</script>
+</body>
+</html>
